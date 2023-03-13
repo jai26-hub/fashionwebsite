@@ -1,0 +1,32 @@
+<table border=1px>
+    <tr>
+        <td>
+           CategoryName <input type="CategoryName">
+        </td>
+       
+        </tr> 
+        <h4>CrudOperation</h4>
+    <button value="Add" (click)="Add()">Add</button> 
+   
+<tr *ngFor="let d of arrshow; index as i">
+ <td>{{d.categoryid}}</td>
+    <td>{{d.categoryname}}</td>
+     
+     <button [routerLink]="['/edit',i]">Edit  </button>
+     <button value="View">View </button>
+ 
+     <button [routerLink]="['/product']">Product  </button>
+
+   
+     
+     <button value="Delete" (click)="Delete(i)">Delete</button>
+     
+ 
+</tr>
+
+
+
+</table>
+<!-- <app-product></app-product> -->
+
+

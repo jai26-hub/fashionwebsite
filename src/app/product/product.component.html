@@ -1,0 +1,105 @@
+
+ 
+
+
+
+
+
+   <html>
+
+    <head>
+      <title>details</title>
+      <style>
+        table,
+        th,
+        td {
+          border: 0.5px solid black;
+        }
+      </style>
+    </head>
+    <div>
+    
+      <body>
+        <h1>details</h1> 
+        <td>
+          Category
+        </td> 
+       
+        <select name="demo" id="#">
+            <option selected="selected" value="one">CategoriseName</option>
+            
+             <option *ngFor="let web of s.arrservice">{{web.categoryname}}</option>  
+             
+          
+             </select>
+             <select name="demo" id="#">
+              <option selected="selected" value="one">title</option>
+              
+               <option *ngFor="let web of s.arrservice">{{web.title}}</option>  
+               
+            
+               </select>
+    
+
+             
+
+<!-- 
+              <select name="demo" id="#"> -->
+<!-- <option selected="selected" value="one">ProductName</option>
+
+          <option *ngFor="let web of s.arrservice">{{web.productname}}</option>  
+    
+   </select>
+   <select name="demo" id="#">
+    <option selected="selected" value="one">ProductPrice</option>
+<option *ngFor="let web of s.arrservice">{{web.productprice}}</option>  
+
+       
+       </select>
+       <select name="demo" id="#">
+        <option selected="selected" value="one">ProductVarient</option>
+    <option *ngFor="let web of s.arrservice">{{web.productvarient}}</option>  
+     -->
+           
+           <!-- </select> -->
+
+      
+           <!-- <select name="demo" id="#">
+            <option selected="selected" value="one">ProductVarient</option>
+                <option value="two">128GB</option>
+                <option value="two">64GB</option>
+                <option value="two">32GB</option>
+               </select> -->
+               <input type="button" value="Add" (click)="ProductAdd()">
+             
+        <table>
+            <tr bgcolor="#C2D0C7">
+              <th>ID</th>
+              <th>CategoryName</th>
+     
+                
+            
+              <th>descrption</th>
+           
+               </tr>
+             <tr>
+              
+
+             <tr *ngFor="let d of s.arrservice; index as i">
+              <td>{{d.categoryid}}</td>
+              <td>{{d.categoryname}}</td>
+           
+              <td>{{d.description}}</td>
+              
+          </tr> 
+              
+               
+        
+
+            <!-- </tr>  -->
+      
+          </table>
+        </body>
+      </div>
+      
+      </html>
